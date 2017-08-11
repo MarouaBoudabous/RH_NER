@@ -1,0 +1,74 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>bd.master.rh.semantics</groupId>
+	<artifactId>NamedEntitiesResolver</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<dependencies>
+		<!-- Jena deendencies -->
+
+		<!-- The query engine for Jena -->
+		<!-- https://mvnrepository.com/artifact/org.apache.jena/jena-arq -->
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-arq</artifactId>
+			<version>3.4.0</version>
+		</dependency>
+
+		<!-- The Jena Base Common Enviroment -->
+		<!-- https://mvnrepository.com/artifact/org.apache.jena/jena-base -->
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-base</artifactId>
+			<version>3.4.0</version>
+		</dependency>
+
+		<!-- The Jena Command Line Tools -->
+		<!-- https://mvnrepository.com/artifact/org.apache.jena/jena-cmds -->
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-cmds</artifactId>
+			<version>3.4.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.jena/jena-core -->
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-core</artifactId>
+			<version>3.4.0</version>
+		</dependency>
+
+		<!-- Jena IRI and URI specification -->
+		<!-- https://mvnrepository.com/artifact/org.apache.jena/jena-iri -->
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-iri</artifactId>
+			<version>3.4.0</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.apache.jena/jena-shaded-guava -->
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-shaded-guava</artifactId>
+			<version>3.4.0</version>
+		</dependency>
+
+		<!-- Jena native triple DB -->
+		<!-- https://mvnrepository.com/artifact/org.apache.jena/jena-tdb -->
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-tdb</artifactId>
+			<version>3.4.0</version>
+		</dependency>
+
+
+
+
+
+
+
+
+	</dependencies>
+</project>
