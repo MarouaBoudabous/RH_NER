@@ -10,7 +10,7 @@ import org.apache.jena.query.ResultSetFormatter;
 
 public class ParametrizedQUeryResolver implements IParametrizedQueryResolver {
 
-	public void parametrizedQueryEndpoint(String query, Map<String, String> parameters,Map<String,String> prefixes, String endpoint) {
+	public ResultSet parametrizedQueryEndpoint(String query, Map<String, String> parameters,Map<String,String> prefixes, String endpoint) {
 		ParameterizedSparqlString pss = new ParameterizedSparqlString();
 		pss.setCommandText(query);
 		pss.setNsPrefixes(prefixes);
@@ -22,8 +22,8 @@ public class ParametrizedQUeryResolver implements IParametrizedQueryResolver {
 		System.out.println(pss.asQuery().serialize());
 		QueryExecution exec = QueryExecutionFactory.sparqlService(endpoint, pss.toString());
 		ResultSet rs = exec.execSelect();
-		ResultSetFormatter.out(System.out, rs);
-		
+	//	ResultSetFormatter.out(System.out, rs);
+		return rs;
 	}
 
 }
